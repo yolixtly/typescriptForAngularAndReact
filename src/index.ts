@@ -20,10 +20,11 @@ drawPoints({
 import User from "./class.example";
 // We need to alocate memory to this class by creating an instance with the new keyword and the
 // custom information for the instance of the class
-const janeDoes = new User();
-janeDoes.name = "Jane Does";
-janeDoes.age = 28;
+const janeDoes = new User("Jane Does", 28);
+// Public Method
 janeDoes.sayHi();
+// Privvate method. Cannot be called
+// janeDoes.calculateBirthYear();
 
 // Constructors
 // Access modifiers
