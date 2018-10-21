@@ -28,10 +28,10 @@ janeDoes.sayHi();
 // janeDoes.calculateBirthYear();
 
 // Access modifiers
-janeDoes.updateName("JaneDodiiie");
+janeDoes.name = "JaneDodiiie";
 // Protected Property cannot be modified after set
-// janeDoes.age = 24;
+// janeDoes.name = "Jone Tutsi";
+janeDoes.sayHi();
 
-// Access modifiers
 // Properties
 // Modules
