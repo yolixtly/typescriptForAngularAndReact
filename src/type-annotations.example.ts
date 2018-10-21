@@ -15,7 +15,7 @@
 enum Color {Red = 0, Green = 1, Blue = 2, Purple = 3}
 
 /**
- * Type Assertion method 1:
+ * Type Assertion method
  * When we do not explicitly say the datatype at declaration time.
  * Instead when we use it, we wrap it in () and include the <datatype>
  * OR
@@ -25,7 +25,7 @@ enum Color {Red = 0, Green = 1, Blue = 2, Purple = 3}
 let message;
 message = "abc";
 // let endsWithC = (<string>message).endsWith('c');
-let endsWithC = (message as string).endsWith("c");
+// let endsWithC = (message as string).endsWith("c");
 
 /**
  * Highlights Parameters with:
@@ -41,6 +41,7 @@ let endsWithC = (message as string).endsWith("c");
  */
 const count = (a: number, e?: number[], b?: boolean, c?: string, g?: string[], d?: any, f?: any[]) => {
     console.log("@param a {number}: ", a);
+    console.log("@param e {array}: ", e);
     // @TODO: Add logs to test the ouput of the rest of params
 };
 export default count;
