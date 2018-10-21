@@ -1,0 +1,4 @@
+node_modules
+# We only care for typescript files
+# use npm run startDev to compile ts files
+*.js
