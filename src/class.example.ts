@@ -1,18 +1,24 @@
 export default class User {
-    constructor(private name: string, protected age?: number) {
+    constructor(public _name: string, protected age?: number) {
     }
 
     public sayHi() {
-        console.log("Hi, I am: " + this.name + ". I was born in: " + this.calculateBirthYear());
-    }
-
-    public updateName(newName) {
-        this.name = newName;
-        console.log("Your name has been updated to: " + newName);
+        console.log("Hi, I am: " + this._name + ". I was born in: " + this.calculateBirthYear());
     }
 
     private calculateBirthYear(): number {
         const currentYear = new Date().getFullYear();
         return currentYear - (this.age || 0);
+    }
+    /**
+     * Read only method for a Protected property
+     */
+    // get name() {
+    //     return this._name;
+    // }
+
+    set name(newName) {
+        console.log("Your name has been updated to: " + newName);
+        this._name = newName;
     }
 }
