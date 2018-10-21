@@ -6,7 +6,8 @@
   "scripts": {
     "compile": "tsc ./*.ts && node index.js",
     "startDev": "nodemon -e ts --exec \"npm run compile\"",
-    "start": "tsc && node build/index.js"
+    "start": "ts-node src/index.ts",
+    "dev": "nodemon"
   },
   "author": "",
   "license": "ISC",
