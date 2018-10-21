@@ -21,6 +21,7 @@ enum Color {Red = 0, Green = 1, Blue = 2, Purple = 3}
  * OR
  * we use variable as datatype style <= this works
  * This helps the inteligent tool in the vscode to catch errors
+ * But does not changes the variable at run time
  */
 let message;
 message = "abc";
