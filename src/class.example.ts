@@ -1,11 +1,5 @@
 export default class User {
-    public name: string;
-    protected age: number;
-
-    constructor(name: string, age?: number) {
-        // Define the name and age of the Class instance
-        this.name = name;
-        this.age = age || 0;
+    constructor(private name: string, protected age?: number) {
     }
 
     public sayHi() {
@@ -19,6 +13,6 @@ export default class User {
 
     private calculateBirthYear(): number {
         const currentYear = new Date().getFullYear();
-        return currentYear - (this.age);
+        return currentYear - (this.age || 0);
     }
 }
